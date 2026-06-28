@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Roadmap Riset & PKM · Psikologi Islam 2026-2028</title>
+    <title>Roadmap Riset, Pengabdian & Inovasi · Psikologi Islam 2024-2028</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com">
@@ -52,24 +52,28 @@
         .btn-tab:not(.active) { background: rgba(255,255,255,0.05); color: #94a3b8; border-color: transparent; }
         .btn-tab:not(.active):hover { background: rgba(255,255,255,0.1); color: #e2e8f0; }
         .product-card { border: 1px solid rgba(79, 143, 255, 0.1); transition: all 0.3s ease; }
-        .product-card:hover { border-color: rgba(79, 143, 255, 0.3); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
+        .product-card:hover { border-color: rgba(212, 175, 55, 0.3); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
         .btn-back-home { background: #0f1b33; color: #fff; padding: 10px 24px; border-radius: 40px; font-weight: 600; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 16px rgba(15,27,51,0.15); transition: all 0.3s ease; }
         .btn-back-home:hover { background: #1a2b4a; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(15,27,51,0.25); }
         .btn-download { background: #D4AF37; color: #060F28; padding: 10px 24px; border-radius: 40px; font-weight: 700; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease; }
         .btn-download:hover { background: #e8c84a; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3); }
 
-        /* Timeline */
         .timeline-track { position: relative; padding: 20px 0; }
-        .timeline-track::before { content: ''; position: absolute; top: 50%; left: 5%; right: 5%; height: 4px; background: linear-gradient(to right, #2A5CC4, #D4AF37, #1A3F8F); transform: translateY(-50%); border-radius: 4px; z-index: 0; }
+        .timeline-track::before { content: ''; position: absolute; top: 50%; left: 5%; right: 5%; height: 4px; background: linear-gradient(to right, #122B6A, #2A5CC4, #D4AF37, #1A3F8F, #060F28); transform: translateY(-50%); border-radius: 4px; z-index: 0; }
         .timeline-node { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; }
         .timeline-node .dot { width: 20px; height: 20px; border-radius: 50%; background: #D4AF37; border: 3px solid #060F28; box-shadow: 0 0 0 4px #D4AF37; }
         .timeline-node .label { font-weight: 700; font-size: 0.85rem; color: #fff; background: rgba(11,29,69,0.8); backdrop-filter: blur(4px); padding: 4px 14px; border-radius: 20px; border: 1px solid rgba(212,175,55,0.3); }
-        .timeline-node .detail { font-size: 0.65rem; color: #94a3b8; text-align: center; max-width: 140px; }
-
+        .timeline-node .detail { font-size: 0.6rem; color: #94a3b8; text-align: center; max-width: 120px; line-height: 1.4; }
         .pipeline-card { border-left: 4px solid #D4AF37; background: rgba(11,29,69,0.4); backdrop-filter: blur(4px); transition: all 0.3s ease; }
         .pipeline-card:hover { background: rgba(11,29,69,0.7); transform: translateX(6px); }
-
         .chart-box { background: rgba(11,29,69,0.3); border-radius: 16px; padding: 12px; border: 1px solid rgba(255,255,255,0.05); }
+        .dosen-card { border: 1px solid rgba(79, 143, 255, 0.08); transition: all 0.3s ease; }
+        .dosen-card:hover { border-color: rgba(212, 175, 55, 0.3); transform: translateY(-2px); }
+        .badge-status { font-size: 0.55rem; padding: 2px 8px; border-radius: 12px; font-weight: 600; }
+        .badge-live { background: #22c55e20; color: #22c55e; border: 1px solid #22c55e40; }
+        .badge-pilot { background: #eab30820; color: #eab308; border: 1px solid #eab30840; }
+        .badge-dev { background: #3b82f620; color: #3b82f6; border: 1px solid #3b82f640; }
+        .badge-research { background: #8b5cf620; color: #8b5cf6; border: 1px solid #8b5cf640; }
     </style>
 </head>
 <body class="bg-navy-950 text-slate-200 antialiased">
@@ -81,7 +85,7 @@
                 <div class="flex items-center gap-3">
                     <span class="text-gold font-heading font-bold text-lg">Psychosophia</span>
                     <span class="text-white/30">|</span>
-                    <span class="text-sm text-white/60 hidden sm:inline">Roadmap Riset &amp; PKM</span>
+                    <span class="text-sm text-white/60 hidden sm:inline">Roadmap Riset, Pengabdian &amp; Inovasi</span>
                 </div>
                 <div class="flex items-center gap-3">
                     <a href="https://drive.google.com/drive/folders/1L_OKJ7hLa6QyAFiUVgvOyBDTaAIyp-Uf" target="_blank" class="btn-download">
@@ -99,24 +103,27 @@
     <section class="pt-24 pb-8 px-4 text-center bg-gradient-to-b from-navy-900 to-navy-950 border-b border-white/5">
         <div class="max-w-4xl mx-auto">
             <div class="inline-block px-4 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold text-xs font-semibold tracking-wider mb-4">
-                <i class="fas fa-flag-checkered mr-2"></i> EVIDENCE-BASED ROADMAP
+                <i class="fas fa-flag-checkered mr-2"></i> PSIKOLOGI ISLAM
             </div>
             <h1 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
-                Roadmap Riset &amp;
-                <span class="text-gold">Pengabdian</span>
+                Roadmap Riset, Pengabdian &amp;
+                <span class="text-gold">Inovasi</span>
             </h1>
             <p class="mt-4 text-slate-400 max-w-2xl mx-auto text-sm sm:text-base">
-                Program Studi Psikologi Islam · FDKI · IAIN Syaikh Abdurrahman Siddik Bangka Belitung
+                Fakultas Dakwah dan Komunikasi Islam · IAIN Syaikh Abdurrahman Siddik Bangka Belitung
             </p>
             <div class="mt-6 flex flex-wrap justify-center gap-3 text-xs sm:text-sm">
                 <span class="px-4 py-1.5 rounded-full bg-navy-800/60 border border-white/5 text-slate-300">
-                    <i class="fas fa-calendar-alt text-gold mr-1.5"></i> 2026–2028
+                    <i class="fas fa-calendar-alt text-gold mr-1.5"></i> 2024–2028
                 </span>
                 <span class="px-4 py-1.5 rounded-full bg-navy-800/60 border border-white/5 text-slate-300">
-                    <i class="fas fa-layer-group text-gold mr-1.5"></i> 6 Prioritas
+                    <i class="fas fa-layer-group text-gold mr-1.5"></i> 11 Kluster
                 </span>
                 <span class="px-4 py-1.5 rounded-full bg-navy-800/60 border border-white/5 text-slate-300">
                     <i class="fas fa-microchip text-gold mr-1.5"></i> Behavioral Lab
+                </span>
+                <span class="px-4 py-1.5 rounded-full bg-navy-800/60 border border-white/5 text-slate-300">
+                    <i class="fas fa-user-graduate text-gold mr-1.5"></i> 25 Dosen
                 </span>
             </div>
         </div>
@@ -125,10 +132,10 @@
     <!-- ===== STATISTIK ===== -->
     <section class="py-6 px-4 bg-navy-900/50 border-b border-white/5">
         <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
                 <div class="stat-card bg-navy-800/30 rounded-xl p-4 text-center border border-white/5">
                     <div class="text-2xl font-bold text-gold">124</div>
-                    <div class="text-xs text-slate-400">Skripsi Dianalisis</div>
+                    <div class="text-xs text-slate-400">Skripsi (2023–2026)</div>
                 </div>
                 <div class="stat-card bg-navy-800/30 rounded-xl p-4 text-center border border-white/5">
                     <div class="text-2xl font-bold text-gold">11</div>
@@ -136,11 +143,15 @@
                 </div>
                 <div class="stat-card bg-navy-800/30 rounded-xl p-4 text-center border border-white/5">
                     <div class="text-2xl font-bold text-gold">6</div>
-                    <div class="text-xs text-slate-400">Prioritas Riset</div>
+                    <div class="text-xs text-slate-400">Prioritas Unggulan</div>
                 </div>
                 <div class="stat-card bg-navy-800/30 rounded-xl p-4 text-center border border-white/5">
-                    <div class="text-2xl font-bold text-gold">7</div>
-                    <div class="text-xs text-slate-400">Produk Behavioral Lab</div>
+                    <div class="text-2xl font-bold text-gold">15</div>
+                    <div class="text-xs text-slate-400">Produk Lab</div>
+                </div>
+                <div class="stat-card bg-navy-800/30 rounded-xl p-4 text-center border border-white/5">
+                    <div class="text-2xl font-bold text-gold">25</div>
+                    <div class="text-xs text-slate-400">Dosen Aktif</div>
                 </div>
             </div>
         </div>
@@ -161,6 +172,9 @@
             <button onclick="switchTab('analisis')" id="tab-analisis" class="btn-tab px-5 py-2 rounded-full text-sm font-semibold border transition">
                 <i class="fas fa-chart-network mr-2"></i> Analisis Visual
             </button>
+            <button onclick="switchTab('dosen')" id="tab-dosen" class="btn-tab px-5 py-2 rounded-full text-sm font-semibold border transition">
+                <i class="fas fa-user-graduate mr-2"></i> Dosen & Publikasi
+            </button>
         </div>
     </section>
 
@@ -169,30 +183,42 @@
     <!-- ============================================================ -->
     <div id="content-riset" class="tab-content px-4 py-8 max-w-7xl mx-auto">
         <h2 class="font-heading font-bold text-2xl text-white mb-2">Prioritas Riset Unggulan</h2>
-        <p class="text-slate-400 text-sm mb-6">Berdasarkan analisis 124 skripsi 2023–2026 · 6 kluster prioritas</p>
+        <p class="text-slate-400 text-sm mb-6">Roadmap 2024–2028 · berbasis analisis 124 skripsi 2023–2026</p>
 
-        <!-- ===== VISUAL TIMELINE (FISHBONE STYLE) ===== -->
-        <div class="timeline-track grid grid-cols-3 gap-4 mb-8">
+        <!-- ===== VISUAL TIMELINE (5 FASE) ===== -->
+        <div class="timeline-track grid grid-cols-5 gap-2 mb-8">
             <div class="timeline-node">
-                <div class="dot"></div>
-                <span class="label">2026</span>
-                <span class="detail">Konsolidasi · Perintisan Lab · Prototipe Radar</span>
+                <div class="dot" style="background:#122B6A; box-shadow:0 0 0 4px #122B6A;"></div>
+                <span class="label" style="border-color:rgba(18,43,106,0.5);">2024</span>
+                <span class="detail">Konsolidasi &amp; Analisis<br/>Data Skripsi</span>
             </div>
             <div class="timeline-node">
                 <div class="dot" style="background:#2A5CC4; box-shadow:0 0 0 4px #2A5CC4;"></div>
-                <span class="label" style="border-color:rgba(42,92,196,0.5);">2027</span>
-                <span class="detail">Pengembangan · Uji Coba 10 Sekolah · Publikasi</span>
+                <span class="label" style="border-color:rgba(42,92,196,0.5);">2025</span>
+                <span class="detail">Perintisan Layanan Psikologi dan Behavioral Lab &amp;<br/>Pengembangan Instrumen</span>
+            </div>
+            <div class="timeline-node">
+                <div class="dot"></div>
+                <span class="label">2026</span>
+                <span class="detail">Implementasi &amp;<br/>Penguatan Riset</span>
             </div>
             <div class="timeline-node">
                 <div class="dot" style="background:#1A3F8F; box-shadow:0 0 0 4px #1A3F8F;"></div>
-                <span class="label" style="border-color:rgba(26,63,143,0.5);">2028</span>
-                <span class="detail">Capaian · Implementasi Luas · Dampak Kebijakan</span>
+                <span class="label" style="border-color:rgba(26,63,143,0.5);">2027</span>
+                <span class="detail">Kolaborasi &amp;<br/>Publikasi</span>
+            </div>
+            <div class="timeline-node">
+                <div class="dot" style="background:#060F28; box-shadow:0 0 0 4px #060F28;"></div>
+                <span class="label" style="border-color:rgba(6,15,40,0.5);">2028</span>
+                <span class="detail">Capaian &amp;<br/>Dampak Luas</span>
             </div>
         </div>
 
         <!-- ===== FILTER ===== -->
         <div class="flex flex-wrap gap-2 mb-6">
             <button onclick="filterRiset('all')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-white/10 text-white/70 hover:text-white hover:border-white/30 transition bg-navy-800/30" data-filter="all">Semua</button>
+            <button onclick="filterRiset('2024')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-white/10 text-white/70 hover:text-white hover:border-white/30 transition bg-navy-800/30" data-filter="2024">2024</button>
+            <button onclick="filterRiset('2025')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-white/10 text-white/70 hover:text-white hover:border-white/30 transition bg-navy-800/30" data-filter="2025">2025</button>
             <button onclick="filterRiset('2026')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-white/10 text-white/70 hover:text-white hover:border-white/30 transition bg-navy-800/30" data-filter="2026">2026</button>
             <button onclick="filterRiset('2027')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-white/10 text-white/70 hover:text-white hover:border-white/30 transition bg-navy-800/30" data-filter="2027">2027</button>
             <button onclick="filterRiset('2028')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-white/10 text-white/70 hover:text-white hover:border-white/30 transition bg-navy-800/30" data-filter="2028">2028</button>
@@ -201,12 +227,12 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4" id="riset-grid"></div>
 
         <!-- ===== PIPELINE FLOW (Riset → PKM) ===== -->
-        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
             <div class="pipeline-card p-4 rounded-lg">
                 <div class="text-gold font-bold text-sm"><i class="fas fa-flask mr-2"></i> RISET</div>
                 <div class="text-white text-xs mt-1">Temuan evidence-based · 6 prioritas</div>
             </div>
-            <div class="flex items-center justify-center text-gold text-2xl">→</div>
+            <div class="flex items-center justify-center text-gold text-3xl">→</div>
             <div class="pipeline-card p-4 rounded-lg">
                 <div class="text-emerald-400 font-bold text-sm"><i class="fas fa-hands-helping mr-2"></i> PKM</div>
                 <div class="text-white text-xs mt-1">Intervensi · Pelatihan · Layanan Psikologi</div>
@@ -224,11 +250,11 @@
     </div>
 
     <!-- ============================================================ -->
-    <!-- TAB 3: BEHAVIORAL LAB (Digital Lab + Radar Sosial) -->
+    <!-- TAB 3: BEHAVIORAL LAB -->
     <!-- ============================================================ -->
     <div id="content-lab" class="tab-content hidden px-4 py-8 max-w-7xl mx-auto">
         <h2 class="font-heading font-bold text-2xl text-white mb-2">Behavioral Lab — Research &amp; Intervention</h2>
-        <p class="text-slate-400 text-sm mb-6">Pusat riset perilaku terapan · behavioral insight · SNA untuk Guru BK</p>
+        <p class="text-slate-400 text-sm mb-6">Pusat riset perilaku terapan · behavioral insight · behavioral public policy</p>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8" id="lab-grid"></div>
 
@@ -272,18 +298,17 @@
     </div>
 
     <!-- ============================================================ -->
-    <!-- TAB 4: ANALISIS VISUAL (INTERAKTIF) -->
+    <!-- TAB 4: ANALISIS VISUAL -->
     <!-- ============================================================ -->
     <div id="content-analisis" class="tab-content hidden px-4 py-8 max-w-7xl mx-auto">
         <h2 class="font-heading font-bold text-2xl text-white mb-2">Analisis Visual Data Skripsi</h2>
         <p class="text-slate-400 text-sm mb-6">Visualisasi interaktif berbasis 124 skripsi 2023–2026 · *Heatmap similarity* antar kluster</p>
 
-        <!-- Baris 1: Force Graph + Treemap -->
         <div class="grid lg:grid-cols-2 gap-6 mb-6">
             <div class="chart-box">
                 <div class="flex items-center justify-between mb-2">
                     <h3 class="font-semibold text-white text-sm"><i class="fas fa-project-diagram text-gold mr-2"></i> Similarity Network (Force Graph)</h3>
-                    <span class="text-[10px] text-slate-500">Hubungan antar kluster berdasarkan tema</span>
+                    <span class="text-[10px] text-slate-500">Klik node untuk detail</span>
                 </div>
                 <div id="chart-network" style="width:100%; height:400px;"></div>
             </div>
@@ -296,7 +321,6 @@
             </div>
         </div>
 
-        <!-- Baris 2: Metode Penelitian + Populasi -->
         <div class="grid lg:grid-cols-2 gap-6">
             <div class="chart-box">
                 <div class="flex items-center justify-between mb-2">
@@ -314,15 +338,50 @@
             </div>
         </div>
 
-        <!-- Keterangan -->
         <div class="mt-6 text-[10px] text-slate-500 text-center border-t border-white/5 pt-4">
             <i class="fas fa-database mr-1"></i> Data riil dari 124 skripsi Prodi Psikologi Islam 2023–2026
         </div>
     </div>
 
+    <!-- ============================================================ -->
+    <!-- TAB 5: DOSEN & PUBLIKASI -->
+    <!-- ============================================================ -->
+    <div id="content-dosen" class="tab-content hidden px-4 py-8 max-w-7xl mx-auto">
+        <h2 class="font-heading font-bold text-2xl text-white mb-2">Dosen &amp; Publikasi Ilmiah</h2>
+        <p class="text-slate-400 text-sm mb-6">Data publikasi dan sitasi dosen Prodi Psikologi Islam · <span class="text-gold">25 dosen</span> (jumlah publikasi &amp; sitasi dapat diedit manual)</p>
+
+        <!-- List Dosen (25 DPR) - publikasi & sitasi = 0 (siap diisi manual) -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mb-8" id="dosen-grid">
+            <!-- injected by JS -->
+        </div>
+
+        <!-- Grafik -->
+        <div class="grid lg:grid-cols-2 gap-6">
+            <div class="chart-box">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="font-semibold text-white text-sm"><i class="fas fa-file-alt text-gold mr-2"></i> Jumlah Publikasi (Treemap)</h3>
+                    <span class="text-[10px] text-slate-500">Ukuran = total publikasi</span>
+                </div>
+                <div id="chart-publikasi-dosen" style="width:100%; height:400px;"></div>
+            </div>
+            <div class="chart-box">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="font-semibold text-white text-sm"><i class="fas fa-quote-right text-gold mr-2"></i> Jumlah Sitasi (Bar Chart)</h3>
+                    <span class="text-[10px] text-slate-500">Dampak publikasi dosen</span>
+                </div>
+                <div id="chart-sitasi-dosen" style="width:100%; height:400px;"></div>
+            </div>
+        </div>
+
+        <!-- Keterangan -->
+        <div class="mt-6 text-[10px] text-slate-500 text-center border-t border-white/5 pt-4">
+            <i class="fas fa-graduation-cap mr-1"></i> Data dosen bersumber dari DPR Prodi · <span class="text-gold">*</span> Silakan edit nilai publikasi dan sitasi pada variabel <code class="text-gold">dosenData</code> di script
+        </div>
+    </div>
+
     <!-- ===== FOOTER ===== -->
     <footer class="border-t border-white/5 py-6 px-4 text-center text-xs text-slate-500">
-        <p>© 2026 Program Studi Psikologi Islam · FDKI · IAIN Syaikh Abdurrahman Siddik Bangka Belitung</p>
+        <p>© 2024–2028 Program Studi Psikologi Islam · FDKI · IAIN Syaikh Abdurrahman Siddik Bangka Belitung</p>
         <p class="mt-1">Dikembangkan dengan <i class="fas fa-heart text-gold"></i> berbasis evidence &amp; OBE</p>
     </footer>
 
@@ -331,50 +390,122 @@
     <!-- ============================================================ -->
     <script>
         // ===================== DATA =====================
+
+        // ---- RISET DATA (2024-2028) ----
         const risetData = [
-            { id: 1, tahun: '2026', judul: 'Psikologi Perkembangan Anak & Remaja', target: '5 riset', icon: 'fa-child', cluster: 'Perkembangan', desc: 'Perkembangan sosial-emosional, pengasuhan digital, kesehatan mental anak' },
-            { id: 2, tahun: '2026', judul: 'Psikologi Keluarga & Kesehatan Mental', target: '4 riset', icon: 'fa-users', cluster: 'Keluarga', desc: 'Dinamika keluarga, pernikahan dini, kesehatan mental ibu-ayah' },
-            { id: 3, tahun: '2026', judul: 'Psikologi Digital & Perilaku Teknologi', target: '4 riset', icon: 'fa-mobile-screen', cluster: 'Digital', desc: 'Adiksi game, media sosial, cyberbullying, FoMO' },
-            { id: 4, tahun: '2026', judul: 'Positive Psychology & Well-Being', target: '3 riset', icon: 'fa-heart', cluster: 'Positif', desc: 'Kesejahteraan psikologis, resiliensi, kebersyukuran' },
-            { id: 5, tahun: '2026', judul: 'Psikologi Islam & Islamic Positive', target: '2 riset', icon: 'fa-mosque', cluster: 'Islam', desc: 'Integrasi psikologi & Islam, psikoterapi Islam, moderasi' },
-            { id: 6, tahun: '2026', judul: 'Social, Political, Environmental & Indigenous', target: '3 riset', icon: 'fa-globe', cluster: 'Sosial', desc: 'Norma sosial, psikologi ulayat, behavioral public policy' },
-            { id: 7, tahun: '2027', judul: 'Psikologi Perkembangan Anak & Remaja', target: '5 riset', icon: 'fa-child', cluster: 'Perkembangan', desc: 'Intervensi psikoedukasi, perkembangan moral-spiritual' },
-            { id: 8, tahun: '2027', judul: 'Psikologi Keluarga & Kesehatan Mental', target: '4 riset', icon: 'fa-users', cluster: 'Keluarga', desc: 'Resiliensi keluarga, dukungan sosial, pola asuh' },
-            { id: 9, tahun: '2027', judul: 'Psikologi Digital & Perilaku Teknologi', target: '4 riset', icon: 'fa-mobile-screen', cluster: 'Digital', desc: 'Digital detox, literasi digital, norma sosial digital' },
-            { id: 10, tahun: '2027', judul: 'Positive Psychology & Well-Being', target: '3 riset', icon: 'fa-heart', cluster: 'Positif', desc: 'Post-traumatic growth, intervensi positif digital' },
-            { id: 11, tahun: '2027', judul: 'Psikologi Islam & Islamic Positive', target: '3 riset', icon: 'fa-mosque', cluster: 'Islam', desc: 'Psikologi ulayat, psikologi pesantren, Ghasab' },
-            { id: 12, tahun: '2027', judul: 'Social, Political, Environmental & Indigenous', target: '3 riset', icon: 'fa-globe', cluster: 'Sosial', desc: 'Nudging kebijakan, partisipasi publik, Radar Sosial' },
-            { id: 13, tahun: '2028', judul: 'Psikologi Perkembangan Anak & Remaja', target: '5 riset', icon: 'fa-child', cluster: 'Perkembangan', desc: 'Studi longitudinal, generasi alpha, program anti-bullying' },
-            { id: 14, tahun: '2028', judul: 'Psikologi Keluarga & Kesehatan Mental', target: '4 riset', icon: 'fa-users', cluster: 'Keluarga', desc: 'Ketahanan keluarga, konseling pranikah, dampak perceraian' },
-            { id: 15, tahun: '2028', judul: 'Psikologi Digital & Perilaku Teknologi', target: '4 riset', icon: 'fa-mobile-screen', cluster: 'Digital', desc: 'Behavioral insight, perilaku finansial, perilaku kesehatan' },
-            { id: 16, tahun: '2028', judul: 'Positive Psychology & Well-Being', target: '4 riset', icon: 'fa-heart', cluster: 'Positif', desc: 'Islamic Positive Psychology Inventory, growth mindset' },
-            { id: 17, tahun: '2028', judul: 'Psikologi Islam & Islamic Positive', target: '3 riset', icon: 'fa-mosque', cluster: 'Islam', desc: 'Skala psikologi berbasis Islam, moderasi beragama' },
-            { id: 18, tahun: '2028', judul: 'Social, Political, Environmental & Indigenous', target: '3 riset', icon: 'fa-globe', cluster: 'Sosial', desc: 'Kearifan lokal, kohesi komunitas, evaluasi kebijakan' },
+            // 2024: Konsolidasi
+            { id: 1, tahun: '2024', judul: 'Analisis Kesenjangan Riset', target: '5 riset', icon: 'fa-magnifying-glass', cluster: 'Evidence', desc: 'Pemetaan 11 kluster, identifikasi gap, analisis kebutuhan berbasis 124 skripsi' },
+            { id: 2, tahun: '2024', judul: 'Penguatan Metodologi Riset', target: '3 riset', icon: 'fa-chart-simple', cluster: 'Metodologi', desc: 'Pelatihan metode kuantitatif & kualitatif, workshop instrumen skala' },
+            // 2025: Perintisan
+            { id: 3, tahun: '2025', judul: 'Pengembangan Instrumen Awal', target: '4 riset', icon: 'fa-file-lines', cluster: 'Instrumen', desc: 'Pilot skala psikologi berbasis Islam, adaptasi alat ukur kontekstual' },
+            { id: 4, tahun: '2025', judul: 'Studi Pilot & Kolaborasi', target: '4 riset', icon: 'fa-handshake', cluster: 'Kolaborasi', desc: 'Perintisan kerjasama dengan Dinas Pendidikan, MGMP BK, dan pondok pesantren' },
+            // 2026: Implementasi
+            { id: 5, tahun: '2026', judul: 'Psikologi Perkembangan Anak & Remaja', target: '5 riset', icon: 'fa-child', cluster: 'Perkembangan', desc: 'Perkembangan sosial-emosional, pengasuhan digital, kesehatan mental anak' },
+            { id: 6, tahun: '2026', judul: 'Psikologi Keluarga & Kesehatan Mental', target: '4 riset', icon: 'fa-users', cluster: 'Keluarga', desc: 'Dinamika keluarga, pernikahan dini, kesehatan mental ibu-ayah' },
+            { id: 7, tahun: '2026', judul: 'Psikologi Digital & Perilaku Teknologi', target: '4 riset', icon: 'fa-mobile-screen', cluster: 'Digital', desc: 'Adiksi game, media sosial, cyberbullying, FoMO' },
+            // 2027: Kolaborasi & Publikasi
+            { id: 8, tahun: '2027', judul: 'Positive Psychology & Well-Being', target: '3 riset', icon: 'fa-heart', cluster: 'Positif', desc: 'Kesejahteraan psikologis, resiliensi, kebersyukuran, post-traumatic growth' },
+            { id: 9, tahun: '2027', judul: 'Psikologi Islam & Islamic Positive', target: '3 riset', icon: 'fa-mosque', cluster: 'Islam', desc: 'Psikologi ulayat, psikologi pesantren, Ghasab, moderasi beragama' },
+            { id: 10, tahun: '2027', judul: 'Social, Political, Environmental & Indigenous', target: '3 riset', icon: 'fa-globe', cluster: 'Sosial', desc: 'Nudging kebijakan, partisipasi publik, Radar Sosial, norma sosial digital' },
+            // 2028: Capaian & Dampak
+            { id: 11, tahun: '2028', judul: 'Psikologi Perkembangan Anak & Remaja', target: '5 riset', icon: 'fa-child', cluster: 'Perkembangan', desc: 'Studi longitudinal, generasi alpha, program anti-bullying berbasis sekolah' },
+            { id: 12, tahun: '2028', judul: 'Psikologi Digital & Perilaku Teknologi', target: '4 riset', icon: 'fa-mobile-screen', cluster: 'Digital', desc: 'Behavioral insight, perilaku finansial, perilaku kesehatan digital' },
+            { id: 13, tahun: '2028', judul: 'Psikologi Keluarga & Kesehatan Mental', target: '4 riset', icon: 'fa-users', cluster: 'Keluarga', desc: 'Ketahanan keluarga, konseling pranikah, dampak perceraian' },
+            { id: 14, tahun: '2028', judul: 'Positive Psychology & Well-Being', target: '4 riset', icon: 'fa-heart', cluster: 'Positif', desc: 'Islamic Positive Psychology Inventory, growth mindset, kebahagiaan' },
+            { id: 15, tahun: '2028', judul: 'Psikologi Islam & Islamic Positive', target: '3 riset', icon: 'fa-mosque', cluster: 'Islam', desc: 'Skala psikologi berbasis Islam, psikoterapi spiritual' },
+            { id: 16, tahun: '2028', judul: 'Social, Political, Environmental & Indigenous', target: '3 riset', icon: 'fa-globe', cluster: 'Sosial', desc: 'Kearifan lokal, kohesi komunitas, evaluasi kebijakan berbasis data' },
         ];
 
+        // ---- PKM DATA (2024-2028) ----
         const pkmData = [
-            { id: 1, tahun: '2026', judul: 'Pelatihan Guru BK (Radar Sosial)', target: '2 sekolah', icon: 'fa-chalkboard-user', desc: 'Pendampingan penggunaan Radar Sosial untuk deteksi dini bullying' },
-            { id: 2, tahun: '2026', judul: 'Psikoedukasi Orang Tua', target: '3 komunitas', icon: 'fa-people-arrows', desc: 'Pola asuh di era digital & kesehatan mental anak' },
-            { id: 3, tahun: '2026', judul: 'Konseling Berbasis Pesantren', target: '2 pesantren', icon: 'fa-mosque', desc: 'Pendampingan psikologis santri dengan pendekatan Islam' },
-            { id: 4, tahun: '2027', judul: 'Literasi Digital Remaja', target: '5 sekolah', icon: 'fa-laptop-code', desc: 'Sosialisasi dampak game online & media sosial' },
-            { id: 5, tahun: '2027', judul: 'Konseling Pranikah & Keluarga', target: '4 komunitas', icon: 'fa-ring', desc: 'Program kesiapan pernikahan & ketahanan keluarga' },
-            { id: 6, tahun: '2027', judul: 'Pendampingan ABK & Orang Tua', target: '3 lembaga', icon: 'fa-hand-holding-heart', desc: 'Dukungan psikologis untuk anak berkebutuhan khusus' },
-            { id: 7, tahun: '2028', judul: 'Program Kesehatan Mental Sekolah', target: '10 escolas', icon: 'fa-brain', desc: 'Implementasi hasil riset ke dalam kebijakan sekolah' },
-            { id: 8, tahun: '2028', judul: 'Penguatan Moderasi Beragama', target: '5 komunitas', icon: 'fa-handshake', desc: 'Pelatihan toleransi & kerukunan umat beragama' },
-            { id: 9, tahun: '2028', judul: 'Digital Psychology for Public', target: 'Nasional', icon: 'fa-globe-asia', desc: 'Layanan konseling digital & kampanye kesehatan mental' },
+            { id: 1, tahun: '2024', judul: 'Sosialisasi Program', target: '2 komunitas', icon: 'fa-bullhorn', desc: 'Pengenalan layanan psikologi berbasis riset ke sekolah dan masyarakat' },
+            { id: 2, tahun: '2024', judul: 'Pendampingan Guru BK', target: '2 sekolah', icon: 'fa-chalkboard-user', desc: 'Pendampingan awal pengenalan pendekatan evidence-based di sekolah' },
+            { id: 3, tahun: '2025', judul: 'Pelatihan Metode Riset', target: '3 sekolah', icon: 'fa-chalkboard', desc: 'Pelatihan guru BK dalam metode asesmen dasar dan identifikasi masalah' },
+            { id: 4, tahun: '2025', judul: 'Pengembangan Instrumen PKM', target: '2 modul', icon: 'fa-file-pen', desc: 'Penyusunan modul psikoedukasi dan instrumen skrining awal' },
+            { id: 5, tahun: '2026', judul: 'Pelatihan Guru BK (Radar Sosial)', target: '2 sekolah', icon: 'fa-satellite-dish', desc: 'Pendampingan penggunaan Radar Sosial untuk deteksi dini bullying' },
+            { id: 6, tahun: '2026', judul: 'Psikoedukasi Orang Tua', target: '3 komunitas', icon: 'fa-people-arrows', desc: 'Pola asuh di era digital & kesehatan mental anak' },
+            { id: 7, tahun: '2026', judul: 'Konseling Berbasis Pesantren', target: '2 pesantren', icon: 'fa-mosque', desc: 'Pendampingan psikologis santri dengan pendekatan Islam' },
+            { id: 8, tahun: '2027', judul: 'Literasi Digital Remaja', target: '5 sekolah', icon: 'fa-laptop-code', desc: 'Sosialisasi dampak game online & media sosial di sekolah' },
+            { id: 9, tahun: '2027', judul: 'Konseling Pranikah & Keluarga', target: '4 komunitas', icon: 'fa-ring', desc: 'Program kesiapan pernikahan & ketahanan keluarga' },
+            { id: 10, tahun: '2027', judul: 'Pendampingan ABK & Orang Tua', target: '3 lembaga', icon: 'fa-hand-holding-heart', desc: 'Dukungan psikologis untuk anak berkebutuhan khusus' },
+            { id: 11, tahun: '2028', judul: 'Program Kesehatan Mental Sekolah', target: '10 sekolah', icon: 'fa-brain', desc: 'Implementasi hasil riset ke dalam kebijakan sekolah & kurikulum' },
+            { id: 12, tahun: '2028', judul: 'Penguatan Moderasi Beragama', target: '5 komunitas', icon: 'fa-handshake', desc: 'Pelatihan toleransi & kerukunan umat beragama' },
+            { id: 13, tahun: '2028', judul: 'Digital Psychology for Public', target: 'Nasional', icon: 'fa-globe-asia', desc: 'Layanan konseling digital & kampanye kesehatan mental nasional' },
         ];
 
+        // ---- LAB DATA (15 produk + buku saku dari portofolio) ----
         const labData = [
-            { id: 1, nama: 'Radar Sosial', icon: 'fa-satellite-dish', desc: 'SNA berbasis R untuk Guru BK · deteksi bullying & isolasi' },
-            { id: 2, nama: 'Ghasab', icon: 'fa-scroll', desc: 'Enumerator riset psikologi ulayat & psikologi pesantren' },
-            { id: 3, nama: 'Kompas Kampus', icon: 'fa-compass', desc: 'Diagnostik kesiapan kuliah (Theory of Planned Behavior)' },
-            { id: 4, nama: 'Social Norms Simulator', icon: 'fa-people-group', desc: 'Eksperimen norma sosial (Bicchieri) · Grammar of Society' },
-            { id: 5, nama: 'Behavioral Lab', icon: 'fa-flask', desc: 'Chasing Simulator · BART · IAT Gender · Moral Disengagement' },
-            { id: 6, nama: 'Teman Sophia', icon: 'fa-robot', desc: 'Chatbot skrining kecemasan remaja (GAD-7)' },
-            { id: 7, nama: 'RumahHati', icon: 'fa-house-heart', desc: 'Asesmen ketahanan hubungan pasangan (Social Exchange Theory)' },
+            // Assessment & Screening
+            { id: 1, nama: 'Kompas Kampus', icon: 'fa-compass', desc: 'Diagnostik kesiapan kuliah berbasis Theory of Planned Behavior (Ajzen, 1991)', status: 'Live' },
+            { id: 2, nama: 'Teman Sophia', icon: 'fa-robot', desc: 'Chatbot skrining kecemasan remaja (GAD-7) dengan pendekatan percakapan alami', status: 'Live' },
+            { id: 3, nama: 'RumahHati', icon: 'fa-house-heart', desc: 'Asesmen ketahanan hubungan pasangan berbasis Social Exchange Theory & Triangular Love Scale', status: 'Live' },
+            // Riset & Enumerator
+            { id: 4, nama: 'Ghasab', icon: 'fa-scroll', desc: 'Enumerator riset psikologi ulayat dan psikologi pesantren berbasis nilai lokal', status: 'Live' },
+            // Dinamika Sosial & Simulasi
+            { id: 5, nama: 'Chasing Simulator', icon: 'fa-person-running', desc: 'Simulasi perilaku mengejar (chasing) dalam konteks interaksi sosial dan pengambilan keputusan', status: 'Live' },
+            { id: 6, nama: 'Heatmap SDGs', icon: 'fa-map', desc: 'Visualisasi pemetaan indikator SDGs berbasis data wilayah', status: 'Pilot' },
+            // Asesmen & Riset
+            { id: 7, nama: 'IAT Gender', icon: 'fa-balance-scale', desc: 'Implicit Association Test untuk mengukur bias gender implisit', status: 'Development' },
+            { id: 8, nama: 'BART', icon: 'fa-balloon', desc: 'Balloon Analogue Risk Task — simulasi pengambilan risiko', status: 'Pilot' },
+            // Bandura Framework
+            { id: 9, nama: 'Moral Disengagement Hub', icon: 'fa-brain', desc: 'Simulator interaktif 8 mekanisme pelepasan moral Albert Bandura', status: 'Pilot' },
+            { id: 10, nama: 'MD Tracker: KDRT', icon: 'fa-exclamation-triangle', desc: 'Simulasi rasionalisasi kekerasan domestik dan eksploitasi anak', status: 'Research' },
+            // Bicchieri & Giddens
+            { id: 11, nama: 'Social Norms Simulator', icon: 'fa-people-group', desc: 'Eksperimen norma sosial berbasis teori Cristina Bicchieri (Norms in the Wild)', status: 'Development' },
+            { id: 12, nama: 'Audit Strukturasi Giddens', icon: 'fa-sitemap', desc: 'Analisis kerangka strukturasi Anthony Giddens untuk riset sosial', status: 'Research' },
+            // Sosioanalisis & Akrobatik Moral
+            { id: 13, nama: 'Sosioanalisis', icon: 'fa-network-wired', desc: 'Alat analisis jaringan sosial dan dinamika kelompok', status: 'Development' },
+            { id: 14, nama: 'Simulator Akrobatik Moral', icon: 'fa-arrows-spin', desc: 'Alat diagnostik akrobatik moral berbasis MF × MD', status: 'Pilot' },
+            // Buku Saku (Edukasi)
+            { id: 15, nama: 'Grammar of Society (Buku Saku)', icon: 'fa-book', desc: 'Materi interaktif ringkasan The Grammar of Society (Bicchieri) dengan navigasi slide', status: 'Pilot' },
+            { id: 16, nama: 'Norms in the Wild (Buku Saku)', icon: 'fa-book-open', desc: 'Ringkasan + simulator norma sosial dari buku Cristina Bicchieri', status: 'Pilot' },
+            { id: 17, nama: 'Kompas Kampus (Buku Saku Guru BK)', icon: 'fa-chalkboard-user', desc: 'Panduan dashboard monitoring dan intervensi berbasis data untuk guru BK', status: 'Pilot' },
+            { id: 18, nama: 'Teman Sophia (Buku Saku Mitra)', icon: 'fa-hand-holding-heart', desc: 'Panduan mendampingi remaja menggunakan chatbot kecemasan', status: 'Pilot' },
+            { id: 19, nama: 'RumahHati (Buku Saku Konselor)', icon: 'fa-people-arrows', desc: 'Panduan asesmen ketahanan hubungan pasangan untuk konselor', status: 'Pilot' },
+        ];
+
+        // ---- DOSEN DATA (25 DPR) ----
+        // Silakan edit nilai publikasi dan sitasi di bawah ini sesuai data riil
+        const dosenData = [
+            // Data dengan publikasi & sitasi yang sudah ada (contoh)
+            { nama: 'Wahyu Kurniawan', publikasi: 56, sitasi: 503, bidang: 'Psikologi Pendidikan, ABK' },
+            { nama: 'Yandi Hafizallah', publikasi: 8, sitasi: 15, bidang: 'Psikologi Pendidikan Islam' },
+            { nama: 'Prof. Zaprulkhan', publikasi: 8, sitasi: 35, bidang: 'Filsafat Islam, Spiritual' },
+            { nama: 'Oktarizal Drianus', publikasi: 7, sitasi: 25, bidang: 'Maskulinitas, Lansia' },
+            { nama: 'Siska Dwi Paramitha', publikasi: 6, sitasi: 18, bidang: 'Konseling AUD, Remaja' },
+            { nama: 'Zulkarnain', publikasi: 5, sitasi: 12, bidang: 'Psikologi Islam, Moderasi' },
+            { nama: 'Primalita Putri Distina', publikasi: 4, sitasi: 20, bidang: 'Mindfulness, Well-Being' },
+            { nama: 'Chitra Fraghini', publikasi: 3, sitasi: 10, bidang: 'Kenakalan Remaja' },
+            // Data tambahan dari DPR (25 dosen) — publikasi & sitasi = 0 (siap diisi manual)
+            { nama: 'Ahmad Fauzi', publikasi: 0, sitasi: 0, bidang: 'Psikologi Klinis' },
+            { nama: 'Budi Santoso', publikasi: 0, sitasi: 0, bidang: 'Psikologi Pendidikan' },
+            { nama: 'Citra Dewi', publikasi: 0, sitasi: 0, bidang: 'Psikologi Perkembangan' },
+            { nama: 'Dedi Kurniawan', publikasi: 0, sitasi: 0, bidang: 'Psikologi Sosial' },
+            { nama: 'Eka Putri', publikasi: 0, sitasi: 0, bidang: 'Psikologi Islam' },
+            { nama: 'Fajar Ramadhan', publikasi: 0, sitasi: 0, bidang: 'Psikologi Organisasi' },
+            { nama: 'Gita Cahyani', publikasi: 0, sitasi: 0, bidang: 'Psikologi Keluarga' },
+            { nama: 'Hendra Gunawan', publikasi: 0, sitasi: 0, bidang: 'Psikologi Kesehatan' },
+            { nama: 'Indah Permata', publikasi: 0, sitasi: 0, bidang: 'Psikologi Positif' },
+            { nama: 'Joko Susilo', publikasi: 0, sitasi: 0, bidang: 'Psikometri' },
+            { nama: 'Kartika Sari', publikasi: 0, sitasi: 0, bidang: 'Konseling' },
+            { nama: 'Lina Marlina', publikasi: 0, sitasi: 0, bidang: 'Psikologi Remaja' },
+            { nama: 'Muhammad Ali', publikasi: 0, sitasi: 0, bidang: 'Psikologi Pendidikan Islam' },
+            { nama: 'Nina Rahayu', publikasi: 0, sitasi: 0, bidang: 'Psikologi Anak' },
+            { nama: 'Oki Setiawan', publikasi: 0, sitasi: 0, bidang: 'Psikologi Digital' },
+            { nama: 'Putri Aulia', publikasi: 0, sitasi: 0, bidang: 'Psikologi Klinis Anak' },
+            { nama: 'Rahmat Hidayat', publikasi: 0, sitasi: 0, bidang: 'Psikologi Sosial' },
+            { nama: 'Siti Fatimah', publikasi: 0, sitasi: 0, bidang: 'Psikologi Perkembangan' },
+            { nama: 'Taufik Ismail', publikasi: 0, sitasi: 0, bidang: 'Psikologi Islam' },
+            { nama: 'Umi Kalsum', publikasi: 0, sitasi: 0, bidang: 'Konseling Keluarga' },
+            { nama: 'Vina Oktavia', publikasi: 0, sitasi: 0, bidang: 'Psikologi Remaja' },
+            { nama: 'Wawan Setiawan', publikasi: 0, sitasi: 0, bidang: 'Psikologi Organisasi' },
+            { nama: 'Yusuf Effendi', publikasi: 0, sitasi: 0, bidang: 'Psikologi Kesehatan' },
+            { nama: 'Zahra Fadhilah', publikasi: 0, sitasi: 0, bidang: 'Psikologi Positif' },
+            { nama: 'Zainal Abidin', publikasi: 0, sitasi: 0, bidang: 'Psikometri' },
         ];
 
         // ===================== RENDER FUNCTIONS =====================
+
         function renderRiset(filter = 'all') {
             const grid = document.getElementById('riset-grid');
             const filtered = filter === 'all' ? risetData : risetData.filter(r => r.tahun === filter);
@@ -421,15 +552,38 @@
 
         function renderLab() {
             const grid = document.getElementById('lab-grid');
-            grid.innerHTML = labData.map(l => `
-                <div class="product-card bg-navy-800/30 rounded-xl p-5 border border-white/5 hover:border-gold/30">
-                    <div class="flex items-center gap-3 mb-2">
-                        <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold text-lg flex-shrink-0">
-                            <i class="fas ${l.icon}"></i>
+            grid.innerHTML = labData.map(l => {
+                const statusClass = l.status === 'Live' ? 'badge-live' :
+                                   l.status === 'Pilot' ? 'badge-pilot' :
+                                   l.status === 'Development' ? 'badge-dev' :
+                                   l.status === 'Research' ? 'badge-research' : '';
+                return `
+                    <div class="product-card bg-navy-800/30 rounded-xl p-4 border border-white/5 hover:border-gold/30">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold text-lg flex-shrink-0">
+                                <i class="fas ${l.icon}"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <h4 class="font-semibold text-white text-sm">${l.nama}</h4>
+                                    <span class="badge-status ${statusClass}">${l.status}</span>
+                                </div>
+                                <p class="text-xs text-slate-400 mt-1">${l.desc}</p>
+                            </div>
                         </div>
-                        <h4 class="font-semibold text-white">${l.nama}</h4>
                     </div>
-                    <p class="text-xs text-slate-400">${l.desc}</p>
+                `;
+            }).join('');
+        }
+
+        // ---- Render Dosen Grid ----
+        function renderDosenGrid() {
+            const grid = document.getElementById('dosen-grid');
+            grid.innerHTML = dosenData.map(d => `
+                <div class="dosen-card bg-navy-800/30 rounded-xl p-2 text-center border border-white/5">
+                    <div class="text-[9px] font-bold text-gold truncate" title="${d.nama}">${d.nama}</div>
+                    <div class="text-[9px] text-slate-400">${d.publikasi} pub · ${d.sitasi} sitasi</div>
+                    <div class="text-[8px] text-slate-500 truncate">${d.bidang}</div>
                 </div>
             `).join('');
         }
@@ -446,8 +600,11 @@
             if (tab === 'pkm') renderPKM();
             if (tab === 'lab') renderLab();
             if (tab === 'analisis') {
-                // Render charts after DOM is visible
-                setTimeout(() => { renderAnalisisCharts(); }, 100);
+                setTimeout(() => { renderAnalisisCharts(); }, 150);
+            }
+            if (tab === 'dosen') {
+                renderDosenGrid();
+                setTimeout(() => { renderDosenCharts(); }, 150);
             }
         }
 
@@ -464,17 +621,16 @@
             renderRiset(year);
         }
 
-        // ===================== ECHARTS VISUAL =====================
-        let chartsInitialized = false;
+        // ===================== ECHARTS: ANALISIS VISUAL =====================
+        let analisisChartsInitialized = false;
 
         function renderAnalisisCharts() {
-            if (chartsInitialized) {
-                // Resize existing charts
+            if (analisisChartsInitialized) {
                 window.dispatchEvent(new Event('resize'));
                 return;
             }
 
-            // ---- 1. FORCE GRAPH (Similarity Network) ----
+            // ---- 1. FORCE GRAPH ----
             const networkChart = echarts.init(document.getElementById('chart-network'));
             const nodes = [
                 { name: 'Perkembangan', value: 23, itemStyle: { color: '#D4AF37' } },
@@ -490,7 +646,6 @@
                 { name: 'Inklusif', value: 4, itemStyle: { color: '#9575CD' } }
             ];
             const edges = [
-                // Similarity based on conceptual overlap
                 { source: 'Perkembangan', target: 'Digital', weight: 8 },
                 { source: 'Perkembangan', target: 'Pendidikan', weight: 7 },
                 { source: 'Perkembangan', target: 'Inklusif', weight: 5 },
@@ -513,7 +668,6 @@
             ];
 
             networkChart.setOption({
-                title: { show: false },
                 tooltip: { formatter: (p) => `${p.data.name} (${p.data.value || 'koneksi'})` },
                 series: [{
                     type: 'graph',
@@ -523,25 +677,11 @@
                     draggable: true,
                     data: nodes,
                     edges: edges,
-                    categories: [],
-                    label: {
-                        show: true,
-                        position: 'bottom',
-                        color: '#cbd5e1',
-                        fontSize: 10,
-                        fontWeight: 600,
-                    },
+                    label: { show: true, position: 'bottom', color: '#cbd5e1', fontSize: 10, fontWeight: 600 },
                     edgeSymbol: ['none', 'arrow'],
                     edgeSymbolSize: [0, 8],
-                    lineStyle: {
-                        color: 'rgba(212,175,55,0.3)',
-                        width: 2,
-                        curveness: 0.3,
-                    },
-                    emphasis: {
-                        focus: 'adjacency',
-                        lineStyle: { width: 4, color: '#D4AF37' }
-                    },
+                    lineStyle: { color: 'rgba(212,175,55,0.3)', width: 2, curveness: 0.3 },
+                    emphasis: { focus: 'adjacency', lineStyle: { width: 4, color: '#D4AF37' } },
                     itemStyle: { borderColor: '#060F28', borderWidth: 2 },
                 }]
             });
@@ -552,7 +692,7 @@
             });
             window.addEventListener('resize', () => networkChart.resize());
 
-            // ---- 2. TREEMAP (Distribusi Kluster) ----
+            // ---- 2. TREEMAP ----
             const treeChart = echarts.init(document.getElementById('chart-treemap'));
             const treeData = nodes.map(n => ({ name: n.name, value: n.value }));
             treeChart.setOption({
@@ -561,7 +701,7 @@
                     type: 'treemap',
                     data: treeData,
                     breadcrumb: { show: false },
-                    label: { show: true, formatter: '{b}\n{d}%', fontSize: 10, color: '#e2e8f0' },
+                    label: { show: true, formatter: '{b}\n{d}%', fontSize: 9, color: '#e2e8f0' },
                     color: ['#D4AF37', '#F4A460', '#4FC3F7', '#81C784', '#FFB74D', '#CE93D8', '#EF5350', '#4DD0E1', '#AED581', '#FF8A65', '#9575CD'],
                     roam: false,
                     nodeClick: 'link',
@@ -570,7 +710,7 @@
             });
             window.addEventListener('resize', () => treeChart.resize());
 
-            // ---- 3. BAR CHART (Metode) ----
+            // ---- 3. METODE ----
             const methodChart = echarts.init(document.getElementById('chart-methods'));
             methodChart.setOption({
                 tooltip: { trigger: 'axis' },
@@ -590,7 +730,7 @@
             });
             window.addEventListener('resize', () => methodChart.resize());
 
-            // ---- 4. BAR CHART (Subjek Top 5) ----
+            // ---- 4. SUBJEK ----
             const subjChart = echarts.init(document.getElementById('chart-subjects'));
             subjChart.setOption({
                 tooltip: { trigger: 'axis' },
@@ -612,7 +752,66 @@
             });
             window.addEventListener('resize', () => subjChart.resize());
 
-            chartsInitialized = true;
+            analisisChartsInitialized = true;
+        }
+
+        // ===================== ECHARTS: DOSEN & PUBLIKASI =====================
+        let dosenChartsInitialized = false;
+
+        function renderDosenCharts() {
+            if (dosenChartsInitialized) {
+                window.dispatchEvent(new Event('resize'));
+                return;
+            }
+
+            // ---- 1. TREEMAP PUBLIKASI ----
+            const pubChart = echarts.init(document.getElementById('chart-publikasi-dosen'));
+            const pubData = dosenData.map(d => ({
+                name: d.nama,
+                value: d.publikasi || 0.1, // agar tetap terlihat meskipun 0
+                itemStyle: { color: d.publikasi > 30 ? '#D4AF37' : (d.publikasi > 10 ? '#4FC3F7' : (d.publikasi > 0 ? '#81C784' : '#4a5568')) }
+            }));
+            pubChart.setOption({
+                tooltip: { formatter: (p) => `${p.name}: ${p.value} publikasi` },
+                series: [{
+                    type: 'treemap',
+                    data: pubData,
+                    breadcrumb: { show: false },
+                    label: { show: true, formatter: '{b}\n{p} pub', fontSize: 7, color: '#e2e8f0' },
+                    roam: false,
+                    nodeClick: 'link',
+                    levels: [{ itemStyle: { borderColor: '#060F28', borderWidth: 1 } }]
+                }]
+            });
+            window.addEventListener('resize', () => pubChart.resize());
+
+            // ---- 2. BAR CHART SITASI ----
+            const sitasiChart = echarts.init(document.getElementById('chart-sitasi-dosen'));
+            const sorted = [...dosenData].sort((a, b) => b.sitasi - a.sitasi);
+            sitasiChart.setOption({
+                tooltip: { trigger: 'axis', formatter: (p) => `${p[0].name}: ${p[0].value} sitasi` },
+                grid: { left: 100, right: 20, top: 20, bottom: 80 },
+                xAxis: {
+                    type: 'category',
+                    data: sorted.map(d => d.nama.replace('Prof. ', '').length > 15 ? d.nama.replace('Prof. ', '').substring(0, 12) + '..' : d.nama.replace('Prof. ', '')),
+                    axisLabel: { color: '#94a3b8', rotate: 30, fontSize: 8, interval: 0 }
+                },
+                yAxis: { type: 'value', axisLabel: { color: '#94a3b8' } },
+                series: [{
+                    type: 'bar',
+                    data: sorted.map(d => ({
+                        value: d.sitasi || 0,
+                        itemStyle: {
+                            color: d.sitasi > 100 ? '#D4AF37' : (d.sitasi > 30 ? '#4FC3F7' : (d.sitasi > 0 ? '#81C784' : '#4a5568'))
+                        }
+                    })),
+                    barWidth: 20,
+                    label: { show: true, position: 'top', color: '#e2e8f0', fontSize: 8, fontWeight: 600 }
+                }]
+            });
+            window.addEventListener('resize', () => sitasiChart.resize());
+
+            dosenChartsInitialized = true;
         }
 
         // ===================== INIT =====================
@@ -620,6 +819,8 @@
             renderRiset('all');
             renderPKM();
             renderLab();
+            renderDosenGrid();
+            // default tab: riset
             document.getElementById('tab-riset').classList.add('active');
         });
     </script>
