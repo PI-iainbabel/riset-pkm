@@ -172,10 +172,7 @@
             <button onclick="switchTab('analisis')" id="tab-analisis" class="btn-tab px-5 py-2 rounded-full text-sm font-semibold border transition">
                 <i class="fas fa-chart-network mr-2"></i> Analisis Visual
             </button>
-            <button onclick="switchTab('dosen')" id="tab-dosen" class="btn-tab px-5 py-2 rounded-full text-sm font-semibold border transition">
-                <i class="fas fa-user-graduate mr-2"></i> Dosen & Publikasi
-            </button>
-        </div>
+           </div>
     </section>
 
     <!-- ============================================================ -->
@@ -343,37 +340,7 @@
         </div>
     </div>
 
-    <!-- ============================================================ -->
-    <!-- TAB 5: DOSEN & PUBLIKASI -->
-    <!-- ============================================================ -->
-    <div id="content-dosen" class="tab-content hidden px-4 py-8 max-w-7xl mx-auto">
-        <h2 class="font-heading font-bold text-2xl text-white mb-2">Dosen &amp; Publikasi Ilmiah</h2>
-        <p class="text-slate-400 text-sm mb-6">Data publikasi dan sitasi dosen Prodi Psikologi Islam · <span class="text-gold">25 dosen</span> (jumlah publikasi &amp; sitasi dapat diedit manual)</p>
-
-        <!-- List Dosen (25 DPR) - publikasi & sitasi = 0 (siap diisi manual) -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mb-8" id="dosen-grid">
-            <!-- injected by JS -->
-        </div>
-
-        <!-- Grafik -->
-        <div class="grid lg:grid-cols-2 gap-6">
-            <div class="chart-box">
-                <div class="flex items-center justify-between mb-2">
-                    <h3 class="font-semibold text-white text-sm"><i class="fas fa-file-alt text-gold mr-2"></i> Jumlah Publikasi (Treemap)</h3>
-                    <span class="text-[10px] text-slate-500">Ukuran = total publikasi</span>
-                </div>
-                <div id="chart-publikasi-dosen" style="width:100%; height:400px;"></div>
-            </div>
-            <div class="chart-box">
-                <div class="flex items-center justify-between mb-2">
-                    <h3 class="font-semibold text-white text-sm"><i class="fas fa-quote-right text-gold mr-2"></i> Jumlah Sitasi (Bar Chart)</h3>
-                    <span class="text-[10px] text-slate-500">Dampak publikasi dosen</span>
-                </div>
-                <div id="chart-sitasi-dosen" style="width:100%; height:400px;"></div>
-            </div>
-        </div>
-
-        <!-- Keterangan -->
+         <!-- Keterangan -->
         <div class="mt-6 text-[10px] text-slate-500 text-center border-t border-white/5 pt-4">
             <i class="fas fa-graduation-cap mr-1"></i> Data dosen bersumber dari DPR Prodi · <span class="text-gold">*</span> Silakan edit nilai publikasi dan sitasi pada variabel <code class="text-gold">dosenData</code> di script
         </div>
