@@ -74,6 +74,7 @@
         .badge-pilot { background: #eab30820; color: #eab308; border: 1px solid #eab30840; }
         .badge-dev { background: #3b82f620; color: #3b82f6; border: 1px solid #3b82f640; }
         .badge-research { background: #8b5cf620; color: #8b5cf6; border: 1px solid #8b5cf640; }
+        .product-link { text-decoration: none; color: inherit; display: block; }
     </style>
 </head>
 <body class="bg-navy-950 text-slate-200 antialiased">
@@ -91,12 +92,11 @@
                     <a href="https://drive.google.com/drive/folders/1L_OKJ7hLa6QyAFiUVgvOyBDTaAIyp-Uf" target="_blank" class="btn-download">
                         <i class="fas fa-file-pdf"></i> Unduh Roadmap
                     </a>
+                    <a href="https://pi-iainbabel.github.io/sdm/publikasi.html" class="btn-back-home" style="background: #D4AF37; color: #060F28;">
+                        <i class="fas fa-file-alt"></i> Publikasi Dosen
+                    </a>
                     <a href="https://pi-iainbabel.github.io/psychosophia-hub/" class="btn-back-home">
                         <i class="fas fa-arrow-left"></i> <span class="hidden sm:inline">Kembali ke Home</span>
-                    </a>
-                     </a>
-                    <a href="https://pi-iainbabel.github.io/sdm/publikasi.html" class="btn-back-home">
-                        <i class="fas fa-arrow-left"></i> <span class="hidden sm:inline">ke Publikasi Dosen</span>
                     </a>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                     <div class="text-xs text-slate-400">Prioritas Unggulan</div>
                 </div>
                 <div class="stat-card bg-navy-800/30 rounded-xl p-4 text-center border border-white/5">
-                    <div class="text-2xl font-bold text-gold">15</div>
+                    <div class="text-2xl font-bold text-gold">20</div>
                     <div class="text-xs text-slate-400">Produk Lab</div>
                 </div>
                 <div class="stat-card bg-navy-800/30 rounded-xl p-4 text-center border border-white/5">
@@ -176,7 +176,7 @@
             <button onclick="switchTab('analisis')" id="tab-analisis" class="btn-tab px-5 py-2 rounded-full text-sm font-semibold border transition">
                 <i class="fas fa-chart-network mr-2"></i> Analisis Visual
             </button>
-           </div>
+        </div>
     </section>
 
     <!-- ============================================================ -->
@@ -258,44 +258,6 @@
         <p class="text-slate-400 text-sm mb-6">Pusat riset perilaku terapan · behavioral insight · behavioral public policy</p>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8" id="lab-grid"></div>
-
-        <!-- Radar Sosial (integrated) -->
-        <div class="mt-8 border-t border-white/10 pt-8">
-            <div class="flex items-center gap-3 mb-4">
-                <span class="text-2xl text-gold"><i class="fas fa-satellite-dish"></i></span>
-                <h3 class="font-heading font-bold text-xl text-white">Radar Sosial</h3>
-                <span class="text-xs px-2 py-0.5 rounded-full bg-gold/20 text-gold font-semibold">SNA for Guru BK</span>
-            </div>
-            <p class="text-slate-400 text-sm mb-6">Pemetaan jejaring sosial berbasis Social Network Analysis (SNA) untuk deteksi dini bullying, isolasi sosial, dan dinamika kelompok di sekolah.</p>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-navy-800/30 rounded-xl p-6 border border-white/5">
-                    <h4 class="font-heading font-semibold text-white text-lg mb-3"><i class="fas fa-code text-gold mr-2"></i> Teknologi</h4>
-                    <ul class="space-y-2 text-sm text-slate-300">
-                        <li><span class="text-gold">▸</span> Skrip R · igraph · tidygraph · ggraph</li>
-                        <li><span class="text-gold">▸</span> Dashboard R Shiny interaktif</li>
-                        <li><span class="text-gold">▸</span> Laporan otomatis PDF/HTML</li>
-                        <li><span class="text-gold">▸</span> Kuesioner sosiometri terstandar</li>
-                    </ul>
-                </div>
-                <div class="bg-navy-800/30 rounded-xl p-6 border border-white/5">
-                    <h4 class="font-heading font-semibold text-white text-lg mb-3"><i class="fas fa-chart-network text-gold mr-2"></i> Output untuk Guru BK</h4>
-                    <ul class="space-y-2 text-sm text-slate-300">
-                        <li><span class="text-gold">▸</span> Peta jaringan sosial kelas</li>
-                        <li><span class="text-gold">▸</span> Indeks sentralitas &amp; isolasi</li>
-                        <li><span class="text-gold">▸</span> Identifikasi klaster/subgrup</li>
-                        <li><span class="text-gold">▸</span> Rekomendasi intervensi</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mt-6 bg-navy-800/30 rounded-xl p-6 border border-white/5">
-                <h4 class="font-heading font-semibold text-white text-lg mb-3"><i class="fas fa-road text-gold mr-2"></i> Target Implementasi</h4>
-                <div class="grid grid-cols-3 gap-4 text-center">
-                    <div><div class="text-gold font-bold text-xl">2026</div><div class="text-xs text-slate-400">2 sekolah · 5 guru BK</div></div>
-                    <div><div class="text-gold font-bold text-xl">2027</div><div class="text-xs text-slate-400">10 sekolah · 20 guru BK</div></div>
-                    <div><div class="text-gold font-bold text-xl">2028</div><div class="text-xs text-slate-400">25 sekolah · 50 guru BK</div></div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- ============================================================ -->
@@ -341,12 +303,6 @@
 
         <div class="mt-6 text-[10px] text-slate-500 text-center border-t border-white/5 pt-4">
             <i class="fas fa-database mr-1"></i> Data riil dari 124 skripsi Prodi Psikologi Islam 2023–2026
-        </div>
-    </div>
-
-         <!-- Keterangan -->
-        <div class="mt-6 text-[10px] text-slate-500 text-center border-t border-white/5 pt-4">
-            <i class="fas fa-graduation-cap mr-1"></i> Data dosen bersumber dari DPR Prodi · <span class="text-gold">*</span> Silakan edit nilai publikasi dan sitasi pada variabel <code class="text-gold">dosenData</code> di script
         </div>
     </div>
 
@@ -403,41 +359,41 @@
             { id: 13, tahun: '2028', judul: 'Digital Psychology for Public', target: 'Nasional', icon: 'fa-globe-asia', desc: 'Layanan konseling digital & kampanye kesehatan mental nasional' },
         ];
 
-        // ---- LAB DATA (15 produk + buku saku dari portofolio) ----
+        // ---- LAB DATA (20 produk termasuk Radar Sosial & buku saku) ----
         const labData = [
             // Assessment & Screening
-            { id: 1, nama: 'Kompas Kampus', icon: 'fa-compass', desc: 'Diagnostik kesiapan kuliah berbasis Theory of Planned Behavior (Ajzen, 1991)', status: 'Live' },
-            { id: 2, nama: 'Teman Sophia', icon: 'fa-robot', desc: 'Chatbot skrining kecemasan remaja (GAD-7) dengan pendekatan percakapan alami', status: 'Live' },
-            { id: 3, nama: 'RumahHati', icon: 'fa-house-heart', desc: 'Asesmen ketahanan hubungan pasangan berbasis Social Exchange Theory & Triangular Love Scale', status: 'Live' },
+            { id: 1, nama: 'Kompas Kampus', icon: 'fa-compass', desc: 'Diagnostik kesiapan kuliah berbasis Theory of Planned Behavior (Ajzen, 1991)', status: 'Live', link: 'https://kompas-kampus.netlify.app/' },
+            { id: 2, nama: 'Teman Sophia', icon: 'fa-robot', desc: 'Chatbot skrining kecemasan remaja (GAD-7) dengan pendekatan percakapan alami', status: 'Live', link: 'https://psychosophia-bot.lovable.app/' },
+            { id: 3, nama: 'RumahHati', icon: 'fa-house-heart', desc: 'Asesmen ketahanan hubungan pasangan berbasis Social Exchange Theory & Triangular Love Scale', status: 'Live', link: 'https://rumahhati-psga.lovable.app/' },
             // Riset & Enumerator
-            { id: 4, nama: 'Ghasab', icon: 'fa-scroll', desc: 'Enumerator riset psikologi ulayat dan psikologi pesantren berbasis nilai lokal', status: 'Live' },
+            { id: 4, nama: 'Ghasab', icon: 'fa-scroll', desc: 'Enumerator riset psikologi ulayat dan psikologi pesantren berbasis nilai lokal', status: 'Live', link: 'https://ghasab.lovable.app/' },
             // Dinamika Sosial & Simulasi
-            { id: 5, nama: 'Chasing Simulator', icon: 'fa-person-running', desc: 'Simulasi perilaku mengejar (chasing) dalam konteks interaksi sosial dan pengambilan keputusan', status: 'Live' },
-            { id: 6, nama: 'Heatmap SDGs', icon: 'fa-map', desc: 'Visualisasi pemetaan indikator SDGs berbasis data wilayah', status: 'Pilot' },
+            { id: 5, nama: 'Chasing Simulator', icon: 'fa-person-running', desc: 'Simulasi perilaku mengejar (chasing) dalam konteks interaksi sosial dan pengambilan keputusan', status: 'Live', link: 'https://riset-simulasi-chasing.netlify.app/' },
+            { id: 6, nama: 'Heatmap SDGs', icon: 'fa-map', desc: 'Visualisasi pemetaan indikator SDGs berbasis data wilayah', status: 'Pilot', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/heatmap_sdgs_v.1.2.html' },
             // Asesmen & Riset
-            { id: 7, nama: 'IAT Gender', icon: 'fa-balance-scale', desc: 'Implicit Association Test untuk mengukur bias gender implisit', status: 'Development' },
-            { id: 8, nama: 'BART', icon: 'fa-balloon', desc: 'Balloon Analogue Risk Task — simulasi pengambilan risiko', status: 'Pilot' },
+            { id: 7, nama: 'IAT Gender', icon: 'fa-balance-scale', desc: 'Implicit Association Test untuk mengukur bias gender implisit', status: 'Development', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/iat_gender.html' },
+            { id: 8, nama: 'BART', icon: 'fa-balloon', desc: 'Balloon Analogue Risk Task — simulasi pengambilan risiko', status: 'Pilot', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/bart.html' },
             // Bandura Framework
-            { id: 9, nama: 'Moral Disengagement Hub', icon: 'fa-brain', desc: 'Simulator interaktif 8 mekanisme pelepasan moral Albert Bandura', status: 'Pilot' },
-            { id: 10, nama: 'MD Tracker: KDRT', icon: 'fa-exclamation-triangle', desc: 'Simulasi rasionalisasi kekerasan domestik dan eksploitasi anak', status: 'Research' },
+            { id: 9, nama: 'Moral Disengagement Hub', icon: 'fa-brain', desc: 'Simulator interaktif 8 mekanisme pelepasan moral Albert Bandura', status: 'Pilot', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/bandura-moral-disengagement-hub.html' },
+            { id: 10, nama: 'MD Tracker: KDRT', icon: 'fa-exclamation-triangle', desc: 'Simulasi rasionalisasi kekerasan domestik dan eksploitasi anak', status: 'Research', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/moral-disengagement-tracker-for-violence.html' },
             // Bicchieri & Giddens
-            { id: 11, nama: 'Social Norms Simulator', icon: 'fa-people-group', desc: 'Eksperimen norma sosial berbasis teori Cristina Bicchieri (Norms in the Wild)', status: 'Development' },
-            { id: 12, nama: 'Audit Strukturasi Giddens', icon: 'fa-sitemap', desc: 'Analisis kerangka strukturasi Anthony Giddens untuk riset sosial', status: 'Research' },
+            { id: 11, nama: 'Social Norms Simulator', icon: 'fa-people-group', desc: 'Eksperimen norma sosial berbasis teori Cristina Bicchieri (Norms in the Wild)', status: 'Development', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/simulator_diagnostics_social_norms.html' },
+            { id: 12, nama: 'Audit Strukturasi Giddens', icon: 'fa-sitemap', desc: 'Analisis kerangka strukturasi Anthony Giddens untuk riset sosial', status: 'Research', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/audit-strukturasi-kerangka-giddens.html' },
             // Sosioanalisis & Akrobatik Moral
-            { id: 13, nama: 'Sosioanalisis', icon: 'fa-network-wired', desc: 'Alat analisis jaringan sosial dan dinamika kelompok', status: 'Development' },
-            { id: 14, nama: 'Simulator Akrobatik Moral', icon: 'fa-arrows-spin', desc: 'Alat diagnostik akrobatik moral berbasis MF × MD', status: 'Pilot' },
+            { id: 13, nama: 'Sosioanalisis', icon: 'fa-network-wired', desc: 'Alat analisis jaringan sosial dan dinamika kelompok', status: 'Development', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/sosioanalisis.html' },
+            { id: 14, nama: 'Simulator Akrobatik Moral', icon: 'fa-arrows-spin', desc: 'Alat diagnostik akrobatik moral berbasis MF × MD', status: 'Pilot', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/simulator_akrobatik.html' },
+            // Radar Sosial (belum ada link)
+            { id: 15, nama: 'Radar Sosial', icon: 'fa-satellite-dish', desc: 'Pemetaan jejaring sosial berbasis SNA untuk Guru BK · deteksi bullying & isolasi', status: 'Development', link: '#' },
             // Buku Saku (Edukasi)
-            { id: 15, nama: 'Grammar of Society (Buku Saku)', icon: 'fa-book', desc: 'Materi interaktif ringkasan The Grammar of Society (Bicchieri) dengan navigasi slide', status: 'Pilot' },
-            { id: 16, nama: 'Norms in the Wild (Buku Saku)', icon: 'fa-book-open', desc: 'Ringkasan + simulator norma sosial dari buku Cristina Bicchieri', status: 'Pilot' },
-            { id: 17, nama: 'Kompas Kampus (Buku Saku Guru BK)', icon: 'fa-chalkboard-user', desc: 'Panduan dashboard monitoring dan intervensi berbasis data untuk guru BK', status: 'Pilot' },
-            { id: 18, nama: 'Teman Sophia (Buku Saku Mitra)', icon: 'fa-hand-holding-heart', desc: 'Panduan mendampingi remaja menggunakan chatbot kecemasan', status: 'Pilot' },
-            { id: 19, nama: 'RumahHati (Buku Saku Konselor)', icon: 'fa-people-arrows', desc: 'Panduan asesmen ketahanan hubungan pasangan untuk konselor', status: 'Pilot' },
+            { id: 16, nama: 'Grammar of Society (Buku Saku)', icon: 'fa-book', desc: 'Materi interaktif ringkasan The Grammar of Society (Bicchieri) dengan navigasi slide', status: 'Pilot', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/materi_social_grammar_bicchieri.html' },
+            { id: 17, nama: 'Norms in the Wild (Buku Saku)', icon: 'fa-book-open', desc: 'Ringkasan + simulator norma sosial dari buku Cristina Bicchieri', status: 'Pilot', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/materi_norms_in_the_wild_bicchieri.html' },
+            { id: 18, nama: 'Kompas Kampus (Buku Saku Guru BK)', icon: 'fa-chalkboard-user', desc: 'Panduan dashboard monitoring dan intervensi berbasis data untuk guru BK', status: 'Pilot', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/buku_saku_kompas_kampus.html' },
+            { id: 19, nama: 'Teman Sophia (Buku Saku Mitra)', icon: 'fa-hand-holding-heart', desc: 'Panduan mendampingi remaja menggunakan chatbot kecemasan', status: 'Pilot', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/buku_saku_teman-sophia.html' },
+            { id: 20, nama: 'RumahHati (Buku Saku Konselor)', icon: 'fa-people-arrows', desc: 'Panduan asesmen ketahanan hubungan pasangan untuk konselor', status: 'Pilot', link: 'https://pi-iainbabel.github.io/psychosophia-portfolio/lab/buku_saku_rumahhati.html' },
         ];
 
         // ---- DOSEN DATA (25 DPR) ----
-        // Silakan edit nilai publikasi dan sitasi di bawah ini sesuai data riil
         const dosenData = [
-            // Data dengan publikasi & sitasi yang sudah ada (contoh)
             { nama: 'Wahyu Kurniawan', publikasi: 56, sitasi: 503, bidang: 'Psikologi Pendidikan, ABK' },
             { nama: 'Yandi Hafizallah', publikasi: 8, sitasi: 15, bidang: 'Psikologi Pendidikan Islam' },
             { nama: 'Prof. Zaprulkhan', publikasi: 8, sitasi: 35, bidang: 'Filsafat Islam, Spiritual' },
@@ -446,7 +402,6 @@
             { nama: 'Zulkarnain', publikasi: 5, sitasi: 12, bidang: 'Psikologi Islam, Moderasi' },
             { nama: 'Primalita Putri Distina', publikasi: 4, sitasi: 20, bidang: 'Mindfulness, Well-Being' },
             { nama: 'Chitra Fraghini', publikasi: 3, sitasi: 10, bidang: 'Kenakalan Remaja' },
-            // Data tambahan dari DPR (25 dosen) — publikasi & sitasi = 0 (siap diisi manual)
             { nama: 'Ahmad Fauzi', publikasi: 0, sitasi: 0, bidang: 'Psikologi Klinis' },
             { nama: 'Budi Santoso', publikasi: 0, sitasi: 0, bidang: 'Psikologi Pendidikan' },
             { nama: 'Citra Dewi', publikasi: 0, sitasi: 0, bidang: 'Psikologi Perkembangan' },
@@ -527,35 +482,27 @@
                                    l.status === 'Pilot' ? 'badge-pilot' :
                                    l.status === 'Development' ? 'badge-dev' :
                                    l.status === 'Research' ? 'badge-research' : '';
+                const linkTarget = l.link && l.link !== '#' ? 'target="_blank"' : '';
+                const linkHref = l.link || '#';
                 return `
-                    <div class="product-card bg-navy-800/30 rounded-xl p-4 border border-white/5 hover:border-gold/30">
-                        <div class="flex items-start gap-3">
-                            <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold text-lg flex-shrink-0">
-                                <i class="fas ${l.icon}"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <div class="flex items-center gap-2 flex-wrap">
-                                    <h4 class="font-semibold text-white text-sm">${l.nama}</h4>
-                                    <span class="badge-status ${statusClass}">${l.status}</span>
+                    <a href="${linkHref}" ${linkTarget} class="product-link">
+                        <div class="product-card bg-navy-800/30 rounded-xl p-4 border border-white/5 hover:border-gold/30">
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold text-lg flex-shrink-0">
+                                    <i class="fas ${l.icon}"></i>
                                 </div>
-                                <p class="text-xs text-slate-400 mt-1">${l.desc}</p>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-2 flex-wrap">
+                                        <h4 class="font-semibold text-white text-sm">${l.nama}</h4>
+                                        <span class="badge-status ${statusClass}">${l.status}</span>
+                                    </div>
+                                    <p class="text-xs text-slate-400 mt-1">${l.desc}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 `;
             }).join('');
-        }
-
-        // ---- Render Dosen Grid ----
-        function renderDosenGrid() {
-            const grid = document.getElementById('dosen-grid');
-            grid.innerHTML = dosenData.map(d => `
-                <div class="dosen-card bg-navy-800/30 rounded-xl p-2 text-center border border-white/5">
-                    <div class="text-[9px] font-bold text-gold truncate" title="${d.nama}">${d.nama}</div>
-                    <div class="text-[9px] text-slate-400">${d.publikasi} pub · ${d.sitasi} sitasi</div>
-                    <div class="text-[8px] text-slate-500 truncate">${d.bidang}</div>
-                </div>
-            `).join('');
         }
 
         // ===================== TAB SWITCH =====================
@@ -571,10 +518,6 @@
             if (tab === 'lab') renderLab();
             if (tab === 'analisis') {
                 setTimeout(() => { renderAnalisisCharts(); }, 150);
-            }
-            if (tab === 'dosen') {
-                renderDosenGrid();
-                setTimeout(() => { renderDosenCharts(); }, 150);
             }
         }
 
@@ -725,71 +668,11 @@
             analisisChartsInitialized = true;
         }
 
-        // ===================== ECHARTS: DOSEN & PUBLIKASI =====================
-        let dosenChartsInitialized = false;
-
-        function renderDosenCharts() {
-            if (dosenChartsInitialized) {
-                window.dispatchEvent(new Event('resize'));
-                return;
-            }
-
-            // ---- 1. TREEMAP PUBLIKASI ----
-            const pubChart = echarts.init(document.getElementById('chart-publikasi-dosen'));
-            const pubData = dosenData.map(d => ({
-                name: d.nama,
-                value: d.publikasi || 0.1, // agar tetap terlihat meskipun 0
-                itemStyle: { color: d.publikasi > 30 ? '#D4AF37' : (d.publikasi > 10 ? '#4FC3F7' : (d.publikasi > 0 ? '#81C784' : '#4a5568')) }
-            }));
-            pubChart.setOption({
-                tooltip: { formatter: (p) => `${p.name}: ${p.value} publikasi` },
-                series: [{
-                    type: 'treemap',
-                    data: pubData,
-                    breadcrumb: { show: false },
-                    label: { show: true, formatter: '{b}\n{p} pub', fontSize: 7, color: '#e2e8f0' },
-                    roam: false,
-                    nodeClick: 'link',
-                    levels: [{ itemStyle: { borderColor: '#060F28', borderWidth: 1 } }]
-                }]
-            });
-            window.addEventListener('resize', () => pubChart.resize());
-
-            // ---- 2. BAR CHART SITASI ----
-            const sitasiChart = echarts.init(document.getElementById('chart-sitasi-dosen'));
-            const sorted = [...dosenData].sort((a, b) => b.sitasi - a.sitasi);
-            sitasiChart.setOption({
-                tooltip: { trigger: 'axis', formatter: (p) => `${p[0].name}: ${p[0].value} sitasi` },
-                grid: { left: 100, right: 20, top: 20, bottom: 80 },
-                xAxis: {
-                    type: 'category',
-                    data: sorted.map(d => d.nama.replace('Prof. ', '').length > 15 ? d.nama.replace('Prof. ', '').substring(0, 12) + '..' : d.nama.replace('Prof. ', '')),
-                    axisLabel: { color: '#94a3b8', rotate: 30, fontSize: 8, interval: 0 }
-                },
-                yAxis: { type: 'value', axisLabel: { color: '#94a3b8' } },
-                series: [{
-                    type: 'bar',
-                    data: sorted.map(d => ({
-                        value: d.sitasi || 0,
-                        itemStyle: {
-                            color: d.sitasi > 100 ? '#D4AF37' : (d.sitasi > 30 ? '#4FC3F7' : (d.sitasi > 0 ? '#81C784' : '#4a5568'))
-                        }
-                    })),
-                    barWidth: 20,
-                    label: { show: true, position: 'top', color: '#e2e8f0', fontSize: 8, fontWeight: 600 }
-                }]
-            });
-            window.addEventListener('resize', () => sitasiChart.resize());
-
-            dosenChartsInitialized = true;
-        }
-
         // ===================== INIT =====================
         document.addEventListener('DOMContentLoaded', function() {
             renderRiset('all');
             renderPKM();
             renderLab();
-            renderDosenGrid();
             // default tab: riset
             document.getElementById('tab-riset').classList.add('active');
         });
