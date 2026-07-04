@@ -42,9 +42,94 @@
     </script>
 
     <style>
+        /* ── Gaya dari halaman struktur organisasi ── */
+        .glass {
+            background: rgba(11, 29, 69, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(79, 143, 255, 0.15);
+        }
+
+        .btn-nav {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            border: 1px solid transparent;
+        }
+        .btn-nav-home {
+            background: rgba(255, 255, 255, 0.04);
+            color: #94a3b8;
+            border-color: rgba(255, 255, 255, 0.06);
+        }
+        .btn-nav-home:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+        }
+        .btn-nav-tree {
+            background: rgba(82, 183, 136, 0.06);
+            color: #52B788;
+            border-color: rgba(82, 183, 136, 0.1);
+        }
+        .btn-nav-tree:hover {
+            background: rgba(82, 183, 136, 0.12);
+            border-color: #52B788;
+            transform: translateY(-2px);
+        }
+        .btn-nav-drive {
+            background: rgba(82, 183, 136, 0.06);
+            color: #52B788;
+            border-color: rgba(82, 183, 136, 0.1);
+        }
+        .btn-nav-drive:hover {
+            background: rgba(82, 183, 136, 0.12);
+            border-color: #52B788;
+            transform: translateY(-2px);
+        }
+
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px 4px;
+            font-size: 0.8rem;
+            padding: 8px 0;
+        }
+        .breadcrumb a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .breadcrumb a:hover {
+            color: #D4AF37;
+        }
+        .breadcrumb .separator {
+            color: #475569;
+            font-size: 0.6rem;
+            margin: 0 2px;
+        }
+        .breadcrumb .current {
+            color: #e2e8f0;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .breadcrumb .current i {
+            color: #D4AF37;
+            font-size: 0.9rem;
+        }
+
+        /* ── Gaya dari halaman roadmap sebelumnya ── */
         .tab-content { animation: fadeIn 0.4s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
-        .glass { background: rgba(11, 29, 69, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(79, 143, 255, 0.15); }
         .stat-card { transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
         .stat-card:hover { transform: translateY(-6px) scale(1.02); }
         .btn-tab { transition: all 0.3s ease; }
@@ -53,57 +138,75 @@
         .btn-tab:not(.active):hover { background: rgba(255,255,255,0.1); color: #e2e8f0; }
         .product-card { border: 1px solid rgba(79, 143, 255, 0.1); transition: all 0.3s ease; }
         .product-card:hover { border-color: rgba(212, 175, 55, 0.3); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
-        .btn-back-home { background: #0f1b33; color: #fff; padding: 10px 24px; border-radius: 40px; font-weight: 600; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 16px rgba(15,27,51,0.15); transition: all 0.3s ease; }
-        .btn-back-home:hover { background: #1a2b4a; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(15,27,51,0.25); }
-        .btn-download { background: #D4AF37; color: #060F28; padding: 10px 24px; border-radius: 40px; font-weight: 700; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease; }
-        .btn-download:hover { background: #e8c84a; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3); }
-
-        .timeline-track { position: relative; padding: 20px 0; }
-        .timeline-track::before { content: ''; position: absolute; top: 50%; left: 5%; right: 5%; height: 4px; background: linear-gradient(to right, #122B6A, #2A5CC4, #D4AF37, #1A3F8F, #060F28); transform: translateY(-50%); border-radius: 4px; z-index: 0; }
-        .timeline-node { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; }
-        .timeline-node .dot { width: 20px; height: 20px; border-radius: 50%; background: #D4AF37; border: 3px solid #060F28; box-shadow: 0 0 0 4px #D4AF37; }
-        .timeline-node .label { font-weight: 700; font-size: 0.85rem; color: #fff; background: rgba(11,29,69,0.8); backdrop-filter: blur(4px); padding: 4px 14px; border-radius: 20px; border: 1px solid rgba(212,175,55,0.3); }
-        .timeline-node .detail { font-size: 0.6rem; color: #94a3b8; text-align: center; max-width: 120px; line-height: 1.4; }
         .pipeline-card { border-left: 4px solid #D4AF37; background: rgba(11,29,69,0.4); backdrop-filter: blur(4px); transition: all 0.3s ease; }
         .pipeline-card:hover { background: rgba(11,29,69,0.7); transform: translateX(6px); }
         .chart-box { background: rgba(11,29,69,0.3); border-radius: 16px; padding: 12px; border: 1px solid rgba(255,255,255,0.05); }
-        .dosen-card { border: 1px solid rgba(79, 143, 255, 0.08); transition: all 0.3s ease; }
-        .dosen-card:hover { border-color: rgba(212, 175, 55, 0.3); transform: translateY(-2px); }
         .badge-status { font-size: 0.55rem; padding: 2px 8px; border-radius: 12px; font-weight: 600; }
         .badge-live { background: #22c55e20; color: #22c55e; border: 1px solid #22c55e40; }
         .badge-pilot { background: #eab30820; color: #eab308; border: 1px solid #eab30840; }
         .badge-dev { background: #3b82f620; color: #3b82f6; border: 1px solid #3b82f640; }
         .badge-research { background: #8b5cf620; color: #8b5cf6; border: 1px solid #8b5cf640; }
         .product-link { text-decoration: none; color: inherit; display: block; }
+        .timeline-track { position: relative; padding: 20px 0; }
+        .timeline-track::before { content: ''; position: absolute; top: 50%; left: 5%; right: 5%; height: 4px; background: linear-gradient(to right, #122B6A, #2A5CC4, #D4AF37, #1A3F8F, #060F28); transform: translateY(-50%); border-radius: 4px; z-index: 0; }
+        .timeline-node { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+        .timeline-node .dot { width: 20px; height: 20px; border-radius: 50%; background: #D4AF37; border: 3px solid #060F28; box-shadow: 0 0 0 4px #D4AF37; }
+        .timeline-node .label { font-weight: 700; font-size: 0.85rem; color: #fff; background: rgba(11,29,69,0.8); backdrop-filter: blur(4px); padding: 4px 14px; border-radius: 20px; border: 1px solid rgba(212,175,55,0.3); }
+        .timeline-node .detail { font-size: 0.6rem; color: #94a3b8; text-align: center; max-width: 120px; line-height: 1.4; }
+        .btn-download { background: #D4AF37; color: #060F28; padding: 10px 24px; border-radius: 40px; font-weight: 700; font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease; }
+        .btn-download:hover { background: #e8c84a; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3); }
+
+        @media (max-width: 640px) {
+            .breadcrumb { font-size: 0.7rem; }
+            .timeline-track { display: none; }
+            .btn-tab { font-size: 0.7rem; padding: 6px 12px; }
+        }
     </style>
 </head>
 <body class="bg-navy-950 text-slate-200 antialiased">
 
-    <!-- ===== NAVBAR ===== -->
+    <!-- ========================================================== -->
+    <!-- NAVBAR DENGAN BREADCRUMB (konsisten dengan halaman lain)   -->
+    <!-- ========================================================== -->
     <nav class="glass fixed top-0 left-0 right-0 z-50 border-b border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center gap-3">
-                    <span class="text-gold font-heading font-bold text-lg">Psychosophia</span>
-                    <span class="text-white/30">|</span>
-                    <span class="text-sm text-white/60 hidden sm:inline">Roadmap Riset, Pengabdian &amp; Inovasi</span>
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between py-3 gap-2">
+
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="https://pi-iainbabel.github.io/psychosophia-hub/" title="Kembali ke Home">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <span class="separator"><i class="fas fa-chevron-right"></i></span>
+                    <a href="https://pi-iainbabel.github.io/penelitian/" title="Kembali ke Penelitian">
+                        <i class="fas fa-building"></i> Penelitian
+                    </a>
+                    <span class="separator"><i class="fas fa-chevron-right"></i></span>
+                    <span class="current">
+                        <i class="fas fa-flag-checkered"></i> Roadmap Riset, PkM &amp; Inovasi
+                    </span>
                 </div>
-                <div class="flex items-center gap-3">
-                    <a href="https://drive.google.com/drive/folders/1L_OKJ7hLa6QyAFiUVgvOyBDTaAIyp-Uf" target="_blank" class="btn-download">
+
+                <!-- Tombol navigasi kanan -->
+                <div class="flex items-center gap-2 flex-wrap">
+                    <a href="https://pi-iainbabel.github.io/psychosophia-hub/" class="btn-nav btn-nav-home" title="Home">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="https://pi-iainbabel.github.io/psychosophia-hub/struktur-konten.html" class="btn-nav btn-nav-tree" title="Tree">
+                        <i class="fas fa-tree"></i> Tree
+                    </a>
+                    <a href="https://drive.google.com/drive/u/1/folders/1cgU9OaGoGfglbUj43Ag1cJSMlAHdqM7M" target="_blank" class="btn-nav btn-nav-drive" title="Unduh Roadmap">
                         <i class="fas fa-file-pdf"></i> Unduh Roadmap
                     </a>
-                    <a href="https://pi-iainbabel.github.io/sdm/publikasi.html" class="btn-back-home" style="background: #D4AF37; color: #060F28;">
-                        <i class="fas fa-file-alt"></i> Publikasi Dosen
-                    </a>
-                    <a href="https://pi-iainbabel.github.io/psychosophia-hub/" class="btn-back-home">
-                        <i class="fas fa-arrow-left"></i> <span class="hidden sm:inline">Kembali ke Home</span>
-                    </a>
                 </div>
+
             </div>
         </div>
     </nav>
 
-    <!-- ===== HERO ===== -->
+    <!-- ========================================================== -->
+    <!-- HERO (tetap)                                               -->
+    <!-- ========================================================== -->
     <section class="pt-24 pb-8 px-4 text-center bg-gradient-to-b from-navy-900 to-navy-950 border-b border-white/5">
         <div class="max-w-4xl mx-auto">
             <div class="inline-block px-4 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold text-xs font-semibold tracking-wider mb-4">
@@ -180,7 +283,7 @@
     </section>
 
     <!-- ============================================================ -->
-    <!-- TAB 1: RISET -->
+    <!-- TAB 1: RISET                                                 -->
     <!-- ============================================================ -->
     <div id="content-riset" class="tab-content px-4 py-8 max-w-7xl mx-auto">
         <h2 class="font-heading font-bold text-2xl text-white mb-2">Prioritas Riset Unggulan</h2>
@@ -242,7 +345,7 @@
     </div>
 
     <!-- ============================================================ -->
-    <!-- TAB 2: PENGABDIAN -->
+    <!-- TAB 2: PENGABDIAN                                            -->
     <!-- ============================================================ -->
     <div id="content-pkm" class="tab-content hidden px-4 py-8 max-w-7xl mx-auto">
         <h2 class="font-heading font-bold text-2xl text-white mb-2">Roadmap Pengabdian kepada Masyarakat</h2>
@@ -251,7 +354,7 @@
     </div>
 
     <!-- ============================================================ -->
-    <!-- TAB 3: BEHAVIORAL LAB -->
+    <!-- TAB 3: BEHAVIORAL LAB                                        -->
     <!-- ============================================================ -->
     <div id="content-lab" class="tab-content hidden px-4 py-8 max-w-7xl mx-auto">
         <h2 class="font-heading font-bold text-2xl text-white mb-2">Behavioral Lab — Research &amp; Intervention</h2>
@@ -261,7 +364,7 @@
     </div>
 
     <!-- ============================================================ -->
-    <!-- TAB 4: ANALISIS VISUAL -->
+    <!-- TAB 4: ANALISIS VISUAL                                       -->
     <!-- ============================================================ -->
     <div id="content-analisis" class="tab-content hidden px-4 py-8 max-w-7xl mx-auto">
         <h2 class="font-heading font-bold text-2xl text-white mb-2">Analisis Visual Data Skripsi</h2>
@@ -312,7 +415,7 @@
     </footer>
 
     <!-- ============================================================ -->
-    <!-- JAVASCRIPT -->
+    <!-- JAVASCRIPT (sama seperti sebelumnya)                        -->
     <!-- ============================================================ -->
     <script>
         // ===================== DATA =====================
